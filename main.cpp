@@ -1,8 +1,10 @@
 #include <iostream>
-#include "printcombn.cpp"
+#include "pointone.cpp"
 
 int main()
 {
-    PrintCombN(1);
+    int n = 0;
+    PointOne(&n);
+    std::cout << n;
     return 0;
 }
