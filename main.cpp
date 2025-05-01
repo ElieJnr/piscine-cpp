@@ -1,10 +1,11 @@
 #include <iostream>
-#include "pointone.cpp"
+#include "ultimatepointone.cpp"
 
-int main()
-{
-    int n = 0;
-    PointOne(&n);
-    std::cout << n;
+int main() {
+    int a = 0;
+    int* b = &a;
+    int** n = &b;
+    UltimatePointOne(&n);  
+    std::cout << a << std::endl;  
     return 0;
 }
