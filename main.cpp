@@ -1,11 +1,13 @@
 #include <iostream>
-#include "ultimatepointone.cpp"
+#include "divmod.cpp"
 
-int main() {
-    int a = 0;
-    int* b = &a;
-    int** n = &b;
-    UltimatePointOne(&n);  
-    std::cout << a << std::endl;  
+int main()
+{
+    int a = 13;
+	int b = 2;
+	int div ;
+	int mod;
+	DivMod(a, b, &div, &mod);
+    std::cout << div << "\n" << mod << std::endl ;
     return 0;
 }
