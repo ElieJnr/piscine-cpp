@@ -1,11 +1,10 @@
 #include <iostream>
-#include "swap.cpp"
+#include <string>
+#include "strrev.cpp"
 
 int main()
 {
-    int a = 0;
-    int b = 1;
-    Swap(&a,&b);
-    std::cout << "a: " << a << " b: " << b << std::endl;
+    std::string s = "Hello world!";
+    std::cout << StrRev(s);
     return 0;
 }
