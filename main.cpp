@@ -1,10 +1,11 @@
 #include <iostream>
-#include "ultimatedivmod.cpp"
+#include "swap.cpp"
+
 int main()
 {
-    int a = 13;
-	int b = 2;
-    ultimatedivmod(&a,&b);
-    std::cout << a << " " << b << std::endl;
+    int a = 0;
+    int b = 1;
+    Swap(&a,&b);
+    std::cout << "a: " << a << " b: " << b << std::endl;
     return 0;
 }
