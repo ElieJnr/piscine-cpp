@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
-#include "strrev.cpp"
+#include "basicatoi.cpp"
+
 
 int main()
 {
-    std::string s = "Hello world!";
-    std::cout << StrRev(s);
+
+    std::string  s = "12345";
+    std::cout << BasicAtoi(s);
     return 0;
 }
