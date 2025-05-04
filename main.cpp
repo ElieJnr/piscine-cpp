@@ -1,16 +1,18 @@
 #include <iostream>
 #include <string>
-#include "atoi.cpp"
+#include <vector>
+#include "sortintegertable.cpp"
 
 int main()
 {
-    std::cout << Atoi("12345") << std::endl;
-    std::cout << Atoi("0000000012345") << std::endl;
-    std::cout << Atoi("012 345") << std::endl;
-    std::cout << Atoi("Hello World!") << std::endl;
-    std::cout << Atoi("+1234") << std::endl;
-    std::cout << Atoi("-1234") << std::endl;
-    std::cout << Atoi("++1234") << std::endl;
-    std::cout << Atoi("--1234") << std::endl;
+    std::vector<int> vec;
+    vec.push_back(5);
+    vec.push_back(3);
+    vec.push_back(4);
+    SortIntegerTable(vec);
+    for (int i = 0; i < vec.size(); i++)
+    {
+        std::cout << vec[i] << std::endl;
+    }
     return 0;
 }
